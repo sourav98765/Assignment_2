@@ -8,72 +8,94 @@
   font-style: normal;
 } 
 /* share style */
-.display-flex{
-    display: flex;
-}
-.bt-primary{
-    background-color: #FEA301;
-    color: white;
-    padding: 10px 50px;
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 12px;
-}
+
 /* colour */
  .orange{
     color: orange;
  }
  .blue{
-    color: blue;
+    color: #01acfd;
  }
  .skyblue{
-    color: skyblue;
+    color: #05d4df;
  }
  .purple{
     colour{
-        color: purple;
+        color: #5d58Ef;
     }
  }
-/* nav style */
-.nav1{
+ /* Navber */
+.header-contain{
+    margin: 1rem 8.75rem;
+}
+.navber{
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 130px;
-    margin-right: 130px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
-.list{
-    gap: 30px;
+.nav-1st{
+    display: flex;
+    
+}
+.nav-2nd>ul{
+    display: flex;
     list-style: none;
+    gap: 32px ;
+    padding: 0 16px;
 }
-.nav-link{
+.nav-2nd>ul>li>a{
     text-decoration: none;
     font-weight: bold;
-}
-/* body */
-.body{
-    margin-left: 140px;
-    margin-right: 140px;
-}
-.title{
-    font-weight: bold;
-    font-size: 56px;
-   
-}
-            
-.banner-content{
-    max-width: 640px;
-    margin: 0 auto; 
-    margin-bottom: 20px;
-    margin-top: 122px;
-    font-weight: 30px;
-}
-.bt2{
-    background-color: #000000;
-    color: white;
-    padding: 10px 50px;
     font-size: 20px;
-    font-weight: 500;
-    border-radius: 12px;
+}
+.nav-3rd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-3rd>button{
+    background-color: orange;
+    border: none;
+    color: white;
+    width: 12.5rem;
+    height: 3.125rem;
+    border-radius: 15px;
+    font-size: large ;
+    font-weight: medium;
+}
+.three-icons{
+    display: none;
+    flex-direction: column;
+    gap:5px;
+    cursor: pointer;
+}
+.three-icons span{
+     width: 25px;
+     height: 3px;
+     background-color: black;
+     border-radius: 5px;
+}
+@media screen and (max-width:576px) {
+    /* Navber */ 
+.header-contain{
+          margin: 0px;
+          border: 2px solid #fea301;
+          padding:15px 18px;
+          margin-bottom: 1rem;
+    
+}
+    .navber{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-1st>h1,
+    .nav-2nd,
+    .nav-3rd{
+        display: none;
+    }
+   .three-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
 }
