@@ -14,9 +14,9 @@
 .bt-primary{
     background-color: #FEA301;
     color: white;
-    padding: 10px 10px;
+    padding: 10px 50px;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     border-radius: 12px;
 }
 /* colour */
@@ -50,4 +50,30 @@
 .nav-link{
     text-decoration: none;
     font-weight: bold;
+}
+/* body */
+.body{
+    margin-left: 140px;
+    margin-right: 140px;
+}
+.title{
+    font-weight: bold;
+    font-size: 56px;
+   
+}
+            
+.banner-content{
+    max-width: 640px;
+    margin: 0 auto; 
+    margin-bottom: 20px;
+    margin-top: 122px;
+    font-weight: 30px;
+}
+.bt2{
+    background-color: #000000;
+    color: white;
+    padding: 10px 50px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 12px;
 }
