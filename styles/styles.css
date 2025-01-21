@@ -7,6 +7,8 @@
   font-weight: 600px;
   font-style: normal;
 } 
+
+
 /* share style */
 
 /* colour */
@@ -65,16 +67,16 @@
 }
 .three-icons{
     display: none;
-    flex-direction: column;
+    /* flex-direction: column;
     gap:5px;
-    cursor: pointer;
-}
-.three-icons span{
+    cursor: pointer; */
+} 
+/* .three-icons span{
      width: 25px;
      height: 3px;
      background-color: black;
      border-radius: 5px;
-}
+} */
 @media screen and (max-width:576px) {
     /* Navber */ 
 .header-contain{
@@ -95,7 +97,7 @@
     }
    .three-icons{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 30px;
+    height: 30px;
    }
 }
