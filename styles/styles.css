@@ -119,6 +119,103 @@
     font-weight: bold;
     cursor: pointer;
 }
+/* curriculum */
+.curriculum-section {
+    background-image: url(assets/bg.png);
+    padding: 2rem 5rem;
+}
+
+.curriculum-section h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.curriculum-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 3rem;
+    gap: 30px;
+}
+
+.box1 {
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(#DEF5FF, #ffffff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.box2 {
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(#FFF4DC, #ffffff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.box3 {
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(#F2E8FF, #ffffff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#b1 {
+    background: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.arr {
+    /* position: relative; */
+    background-color: #FEA301;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.scroll {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.arr div {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    transform: rotate(45deg);
+    left: 14px;
+    top: 16px;
+}
+
+.right {
+    transform: rotate(90deg);
+}
+
+.left {
+    transform: rotate(-90deg);
+}
+
 @media screen and (max-width:576px) {
     /* Navber */ 
 .header-contain{
@@ -169,6 +266,20 @@
         font-size: 0.9rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
+    }
+      /* curriculum */
+      .curriculum-section {
+        padding: 2rem 1rem;
+    }
+
+    .curriculum-box {
+       display: grid;
+       grid-template-columns: repeat(1,1fr);
+
+    }
+
+    .scroll {
+        display: none;
     }
 
 
